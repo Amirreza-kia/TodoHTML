@@ -1,0 +1,29 @@
+body {
+    background-color: rgba(0, 0, 0, 0.82);
+}
+
+.form {
+    border-radius: 10px;
+    border: 3px dashed white;
+    margin: auto;
+    padding: 20px 10px;
+    display: flex;
+    width: 25%;
+    justify-content: center;
+    background-color: darkorchid;
+}
+
+h1 {
+    color: aqua;
+    text-align: center;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+.inner-form {
+    border: 5px solid darkblue;
+    border-radius: 5px;
+    display: flex;
+    margin: auto;
+}
+

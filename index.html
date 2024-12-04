@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+<h1>To-Do List</h1>
+<div class="form">
+
+    <ul id="list-of-tasks">
+        <li>Wake up morning</li>
+        <li>Learn programming</li>
+        <li>Education in uni</li>
+
+    </ul>
+    <div class="inner-form">
+        <input type="text" id="task-input" placeholder="Add new task">
+        <button style="display: inline" id="submit">Add</button>
+        <button style="display: inline" id="delete-submit">Delete All Task</button>
+    </div>
+</div>
+
+<script>
+    const listOfTask = document.getElementById("list-of-tasks")
+    const taskTextInput = document.getElementById("task-input")
+    const submitButton = document.getElementById("submit")
+    const submitButtonDeleteAll = document.getElementById("delete-submit")
+
+    submitButton.addEventListener('click', function () {
+        let taskText = taskTextInput.value
+        const liItem = document.createElement("li")
+        liItem.innerText = taskText
+        listOfTask.appendChild(liItem)
+        taskTextInput.value = ''
+        alert("well done")
+
+    })
+
+    submitButtonDeleteAll.addEventListener("click", function () {
+        listOfTask.innerHTML = ""
+    })
+
+
+</script>
+
+<
+</body>
+</html>
